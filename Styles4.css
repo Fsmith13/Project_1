@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/*
+	DD_Voting stylesheet
+	Author:Frank Smith
+	Date: 1/13/19
+
+	filename: Styles2.css
+*/
+
+/*html and body styles*/
+html {
+	height: 100%;
+}
+
+body {
+	margin: auto;
+	min-width: 320px;
+	max-width: 1020px;
+	width: 100%;
+	background-color: rgb(173, 210, 194);
+}
+
+/* Header Styles*/
+
+header {
+	width: 100%;
+}
+
+
+header nav ul li {
+   font-size: 1.2em; 
+   line-height: 2.3em; 
+   height: 2.3em;
+   padding: 0px 10px;
+   display: inline-block;
+   text-align: center;
+   width: 20%;
+   font-family: 'Bitter', serif;
+}
+
+header nav ul li a {
+   color: black;
+   display: block;
+   width: 100%;
+   text-decoration: none;
+}
+
+a#navicon {
+	display: none;
+}
+
+header nav ul li a:hover {
+   color: #C9082A;
+}
+
+section {
+	margin: 30px;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+tr, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+
+   
+   a#navicon {
+      display: block;
+   }
+   
+   header nav ul {
+      display: none;
+   }
+   
+   header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+      float: left;
+      width: 100%;
+      text-align: left;
+   }
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+   
+   section h1 {
+      font-size: 1.5em;
+   }
+   
+   section p {
+      font-size: 0.9em;
+   }
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+
+   body header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   body header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}

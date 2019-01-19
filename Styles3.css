@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*
+	DD_News stylesheet
+	Author:Frank Smith
+	Date: 1/15/19
+
+	filename: Styles3.css
+*/
+
+/*html and body styles*/
+html {
+	height: 100%;
+}
+
+body {
+	margin: auto;
+	min-width: 320px;
+	max-width: 1020px;
+	width: 100%;
+	background-color: rgb(173, 210, 194);
+}
+
+/* Header Styles*/
+
+header {
+	width: 100%;
+}
+
+
+header nav ul li {
+   font-size: 1.2em; 
+   line-height: 2.3em; 
+   height: 2.3em;
+   padding: 0px 10px;
+   display: inline-block;
+   text-align: center;
+   width: 20%;
+   font-family: 'Bitter', serif;
+}
+
+header nav ul li a {
+   color: black;
+   display: block;
+   width: 100%;
+   text-decoration: none;
+}
+
+a#navicon {
+	display: none;
+}
+
+header nav ul li a:hover {
+   color: #C9082A;
+}
+
+table#east {
+	border: 1px solid black;
+}

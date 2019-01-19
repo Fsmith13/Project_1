@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+
+		The Daily Dribble home page
+		Author: Frank Smith
+		Date: 1/9/19
+
+		Filename: NBA_home.html
+	-->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>The Daily Dribble - An NBA fan site</title>
+	<link href="Styles1.css" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+		<h1>The Daily Dribble</h1>
+		<nav> <a id="navicon" href="#"><img src="Images/DD_navicon.png" alt=""/></a>
+			<ul>
+				<li><a href="DD_Home.html">Home</a></li>
+				<li><a href="DD_Voting.html">All-Star Voting</a></li>
+				<li><a href="DD_News.html">News</a></li>
+				<li><a href="DD_Standings.html">Standings</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<h1 id="welcome"></h1>
+		<figure>
+			<img src="Images/Harden1.jpg" Alt="James Harden" style="width:700px; height:350px;" />
+			<figcaption>James Harden makes history! Check out the news page for more news.</figcaption>
+		</figure>
+		<h3>Check out who leads the 2019 All-Star NBA voting!</h3>
+		<img src="Images/All-Star.jpg" alt="All-Star Charlotte,NC" style="width:700px; height:350px;"/>
+		<img src="Images/NBA_teams.jpg" alt="NBA Teams" style="width:700px; height:350px;" />
+		<p id="stand">Wanna see how your favorite team is doing this season? Check out the standings page to see where your team falls this season.</p>
+		<script>
+			function favTeam() {
+				var txt;
+				var team = prompt("What is your favorite team?", "NBA team");
+				if (team == null || team == "") {
+					txt = "We don't know what your favorite team is";
+				} else {
+					txt = "Good luck to the " + team;
+				}
+				document.getElementById("welcome").innerHTML = txt;
+			}
+			favTeam();
+		</script>
+	</section>
+</body>
+</html>
